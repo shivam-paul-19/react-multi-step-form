@@ -1,11 +1,11 @@
 function PasswordPage({update, updateLine}) {
     update([1,1]);
-    updateLine([1])
+    updateLine([1]);
 
     return (
         <div className="pass-page">
             <h1>Create Password</h1>
-            <form action="http://localhost:5173/password">
+            <form action="http://localhost:5173/profile">
                 <label htmlFor="pass" class="form-label">Password: </label>
                 <input type="password" name="pass" id="pass" class="form-control"/><br />
                 <select class="form-select" aria-label="Default select example">

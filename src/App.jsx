@@ -3,6 +3,8 @@ import { useState } from "react";
 import Progress from "./progress";
 import BasicInfo from "./basic";
 import PasswordPage from "./passwordPage";
+import ProfilePage from "./profilePage";
+import FinalPage from "./finalPage";
 
 import {
     BrowserRouter as Router,
@@ -34,15 +36,19 @@ function App() {
                     <Route
                         exact
                         path="/"
-                        element={<h1><BasicInfo update={updateProg} updateLine={updateLineProg}/></h1>}
+                        element={<BasicInfo update={updateProg} updateLine={updateLineProg}/>}
                     />
                     <Route
                         path="/password"
-                        element={<h1><PasswordPage update={updateProg} updateLine={updateLineProg} /></h1>}
+                        element={<PasswordPage update={updateProg} updateLine={updateLineProg}/>}
                     />
                     <Route
-                        path="/contactus"
-                        element={<h1>ye contact hai</h1>}
+                        path="/profile"
+                        element={<ProfilePage update={updateProg} updateLine={updateLineProg}/>}
+                    />
+                    <Route
+                        path="/final"
+                        element={<FinalPage update={updateProg} updateLine={updateLineProg}/>}
                     />
                     <Route
                         path="*"
