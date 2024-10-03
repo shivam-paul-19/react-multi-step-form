@@ -36,7 +36,7 @@ function Progress({prog, lineProg}) {
                 <div className="first-circle" style={
                     (prog[0])? style1 : style2
                 }></div>
-                <div>&nbsp;&nbsp;Basic information</div>
+                <div className="steps-label">&nbsp;&nbsp;Basic information</div>
             </div>
             <div className="line-1 lines" style={
                 (lineProg[0])? line_style1 : line_style2
@@ -45,7 +45,7 @@ function Progress({prog, lineProg}) {
                 <div className="second"  style={
                     (prog[1])? style1 : style2
                 }></div>
-                <div>&nbsp;&nbsp;Set Password</div>
+                <div className="steps-label">&nbsp;&nbsp;Set Password</div>
             </div>
             <div className="line-2 lines" style={
                 (lineProg[1])? line_style1 : line_style2
@@ -54,7 +54,7 @@ function Progress({prog, lineProg}) {
                 <div className="third" style={
                     (prog[2])? style1 : style2
                 }></div>
-                <div>&nbsp;&nbsp;Profile setup</div>
+                <div className="steps-label">&nbsp;&nbsp;Profile setup</div>
             </div>
             <div className="line-3 lines" style={
                 (lineProg[2])? line_style1 : line_style2
@@ -63,7 +63,7 @@ function Progress({prog, lineProg}) {
                 <div className="fourth" style={
                     (prog[3])? style1 : style2
                 }></div>
-                <div>&nbsp;&nbsp;All set !</div>
+                <div className="steps-label">&nbsp;&nbsp;All set !</div>
             </div>
         </div>
     )

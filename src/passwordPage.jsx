@@ -14,11 +14,11 @@ function PasswordPage({update, updateLine}) {
                     <option value="2">What is your favorite color?</option>
                 </select>
                 <label htmlFor="ans" class="form-label">Answer of security question: </label>
-                <input type="text" name="ans" id="ans" class="form-control"/>
-                <button type="submit">Go to next</button>
-            </form>
+                <input type="text" name="ans" id="ans" class="form-control"/><br /><br />
+                <button className="btn btn-success" type="submit">Go to next</button>
+            </form><br />
             <form action="http://localhost:5173/">
-                <button type="submit">Back</button>
+                <button className="btn btn-outline-dark" type="submit">Back</button>
             </form>
         </div>
     )

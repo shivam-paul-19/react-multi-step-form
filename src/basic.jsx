@@ -10,9 +10,9 @@ function BasicInfo({update, updateLine}) {
                 <input type="text" name="name" id="name" class="form-control"/>
                 <label htmlFor="mail" class="form-label">E-mail</label>
                 <input type="text" name="mail" id="mail" class="form-control" />
-                <label htmlFor="dob">Date of birth: </label>
-                <input type="date" name="dob" id="dob" />
-                <button type="submit">Go to next</button>
+                <label htmlFor="dob">Date of birth: </label>&nbsp;&nbsp;
+                <input type="date" name="dob" id="dob" /><br /><br />
+                <button className="btn btn-success" type="submit">Go to next</button>
             </form>
         </div>
     )
