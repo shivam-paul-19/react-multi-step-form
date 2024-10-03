@@ -29,6 +29,8 @@ function Progress({prog, lineProg}) {
         width: "4px",
         backgroundColor: "purple"
     };
+
+    console.log(prog);
     
     return (
         <div className="progress">

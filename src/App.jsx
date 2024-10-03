@@ -14,7 +14,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-    let [progArr, setProg] = useState([]);
+    let [progArr, setProg] = useState([1]);
     let [lineProgArr, setLineProg] = useState([]);
 
     let updateProg = (arr) => {
@@ -25,13 +25,15 @@ function App() {
         setLineProg(arr);
     }
 
+    console.log(progArr.length);
+
     return (
         <div className="main">
           <div className="progress-box">
             <Progress prog={progArr} lineProg={lineProgArr} />
           </div>
           <div className="form">
-            <Router>
+            {/* <Router>
                 <Routes>
                     <Route
                         exact
@@ -55,7 +57,14 @@ function App() {
                         element={<Navigate to="/" />}
                     />
                 </Routes>
-            </Router>
+            </Router> */}
+            {
+                (progArr.length == 1)? <BasicInfo update={updateProg} updateLine={updateLineProg}/>:(
+                    progArr.length == 2)? <PasswordPage update={updateProg} updateLine={updateLineProg}/>:(
+                        progArr.length == 3)? <ProfilePage update={updateProg} updateLine={updateLineProg}/>:<FinalPage />
+                
+            }
+            {/* / <BasicInfo update={updateProg} updateLine={updateLineProg}/> */}
           </div>
         </div>
     );

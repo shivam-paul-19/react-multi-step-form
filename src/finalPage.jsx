@@ -1,7 +1,4 @@
-function FinalPage({update, updateLine}) {
-    update([1,1,1,1]);
-    updateLine([1,1,1]);
-
+function FinalPage() {
     return(
         <div className="final">
             <h2>You're all set</h2>
