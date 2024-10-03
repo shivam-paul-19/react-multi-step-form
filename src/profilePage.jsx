@@ -4,6 +4,7 @@ function ProfilePage({update, updateLine}) {
 
     return (
         <div className="profie">
+            <h1>Set Profile details</h1>
             <form action="http://localhost:5173/final">
                 <label htmlFor="username" class="form-label">Username: </label>
                 <input type="text" name="username" class="form-control"/>
